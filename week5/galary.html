@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="galary icon" href="assets/galaryicon.png" type="image/png" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Cormorant+Infant:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Cormorant+Infant:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Волшебная галерея</title>
+    <style>
+      h1 {
+        text-align: center;
+        position: relative;
+        color: rgb(44, 128, 225);
+        font-family: "Alegreya", "Times New Roman", serif;
+        font-weight: 500;
+        font-size: 70pt;
+        margin: 5px;
+      }
+      h1::first-letter {
+        color: rgb(39, 39, 174);
+        font-style: oblique;
+      }
+
+      img {
+        position: relative;
+        width: 15vw;
+        height: 25vh;
+        margin: 100px;
+        opacity:0.5;
+        -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+
+      img:hover{
+        opacity: 1;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+
+      a {
+        text-decoration: dotted;
+        font-family: "Alegreya" "Times New Roman", serif;
+        font-style: normal;
+        font-size: 20pt;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: rgb(137, 106, 233);
+      }
+      a:active {
+        text-decoration: dashed;
+        color: rgb(161, 28, 28);
+        font-weight: bold;
+      }
+
+      figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      figcaption{
+        margin-top: 1%;
+        text-align: center
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: cornflowerblue;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        font-family: "Alegreya" "Times New Roman", serif;
+        font-style: italic;
+        font-size: 16pt;
+      }
+
+      .menu:hover {
+        text-decoration: underline;
+        color: rgb(161, 28, 83);
+        padding: 20px;
+      }
+
+      .menu:active {
+        text-decoration: wavy;
+        color: rgb(161, 28, 28);
+        font-weight: bolder;
+      }
+
+      .menu:visited {
+        color: rgb(221, 116, 193);
+      }
+
+      .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+      }
+
+      .flexcontainer.thirdline{
+        align-self:flex-end;
+        justify-self: center;
+        flex: 1;
+        width: 90%;
+      }
+
+      .downmenu{
+        display: inline-block;
+        align-items: center;
+        background-color: rgb(150, 144, 144);
+        color: white;
+        height: 300px;
+        width: 100vw;
+        margin-right: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Волшебный музей</h1>
+      <nav id="mainmenu">
+        <a class="menu" href="main.html">Главная</a>
+        <a class="menu" href="about.html">О нас</a>
+        <a class="menu" href="delivery.html">Доставка</a>
+        <a class="menu" href="feedbacks.html">Отзывы</a>
+        <a class="menu" href="contacts.html">Контакты</a>
+      </nav>
+    </header>
+    <main>
+      <section class="flexcontainer">
+        <figure>
+        <p class="firstline">
+          <a href="magicball.html"><img src="assets/ball.jpg" alt="magic ball" /></p><figcaption>Шар для гадания</figcaption></a></figure>
+          <figure>
+        <p class="firstline">
+          <a href="magicsword.html"><img src="assets/sword.jpg" alt="magic sword" /></p><figcaption>Меч</figcaption></a></figure>
+        <figure>
+        <p class="firstline">
+          <a href="magicmantle.html"><img src="assets/mantle.jpg" alt="magic mantle" /></p><figcaption>Мантия</figcaption></a></figure>
+        <figure>
+        <p class="secondline">
+          <a href="magicwand.html"><img src="assets/magicwand.jpg" alt="magic wand" /></p><figcaption>Волшебная
+            палочка</figcaption></a></figure>
+        <figure>
+        <p class="secondline">
+          <a href="magiclamp.html"><img src="assets/lamp.jpeg" alt="magic lamp" /></p><figcaption>Лампа джина</figcaption></a></figure>
+        <figure>
+        <p class="secondline">
+          <a href="magicelixir.html"><img src="assets/elixir.jpg" alt="magic elixir" /></p><figcaption>Эликсир молодости</figcaption></a></figure>
+        <figure>
+        <p class="thirdline">
+          <a href="magiccrystals.html"><img src="assets/crystals.jpg" alt="magic crystals" /></p><figcaption>Волшебные камни</figcaption></a></figure>
+        <figure>
+        <p class="thirdline">
+          <a href="magiccandles.html"><img src="assets/candle.jpg" alt="magic candles" /></p><figcaption>Ритуальные
+            свечи</figcaption></a></figure>
+      </section>
+    </main>
+    <footer>
+      <nav class="downmenu">
+        <a href="main.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="feedbacks.html">Отзывы</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </footer>
+  </body>
+</html>

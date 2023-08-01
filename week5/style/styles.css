@@ -1,0 +1,47 @@
+<style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        padding: 30px;
+        width: 100%;
+      }
+      main {
+        width: 100%;
+        display: flex;
+      }
+      aside {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        width: 30%;
+      }
+      footer {
+        display: flex;
+        gap: 30px
+        flex-direction: row;
+        padding: 5px;
+        text-align: center;
+      }
+      .flexcontainer {
+        border: 1px solid royalblue;
+        display: flex;
+        gap: 30px
+        flex-direction: column;
+        height: 70vh;
+        width: 100%;
+        align-items: center;
+      }
+      .blocktop {
+        display: flex;
+        text-align: center;
+        gap: 800px;
+        width: 88%;
+      }
+      .blockbottom {
+        text-align: center;
+        width: 80%;
+        padding: 30px
+      }
+    </style>
